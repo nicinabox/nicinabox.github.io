@@ -4,7 +4,6 @@ title: "shortcode.js"
 date: 2012-11-16 19:42
 description: A JavaScript implementation of Wordpress shortcodes.
 comments: true
-categories: Projects
 published: true
 ---
 
@@ -14,7 +13,7 @@ published: true
 
 <!-- more -->
 
-`[overview]`
+\[overview\]
 
 ## What is it?
 
@@ -42,5 +41,7 @@ By shifting the replacement to the frontend, not only does the action happen asy
 <script src="https://rawgithub.com/nicinabox/shortcode.js/master/dist/jquery.shortcode.services.js"></script>
 
 <script type="text/javascript">
-  $('#main').shortcode();
+  $(function() {
+    $('.post').shortcode();
+  });
 </script>

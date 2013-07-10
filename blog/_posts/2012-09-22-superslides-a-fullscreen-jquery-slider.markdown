@@ -8,7 +8,7 @@ published: true
 ---
 
 <p class="lead">
-  Back in April 2012 I started working on a fullscreen JavaScript slider called [Superslides](http://nicinabox.github.com/superslides/). It's had some interest, so I wanted to officially announce it here.
+  Back in April 2012 I started working on a fullscreen JavaScript slider called <a href="http://nicinabox.github.com/superslides/">Superslides</a>. It's had some interest, so I wanted to officially announce it here.
 </p>
 
 <!-- more -->
