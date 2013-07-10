@@ -1,0 +1,9 @@
+.button {
+  border: 0;
+  @include box-shadow(none);
+  font-family: $header_font_family;
+  &.secondary {
+    border: 0;
+    background-color: #ddd;
+  }
+}

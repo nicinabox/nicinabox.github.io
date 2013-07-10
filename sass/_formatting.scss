@@ -22,3 +22,9 @@ pre code {
   font-family: inherit;
   padding: 0;
 }
+
+img {
+  &[src*=typekit] {
+    display: none !important;
+  }
+}

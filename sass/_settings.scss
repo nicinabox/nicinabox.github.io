@@ -14,14 +14,29 @@ $total_columns: 12;
 $mobile_total_columns: 4;
 $block_grid_elements: 12;
 
+$black: #000 !default;
+$white: #fff !default;
+$alert_color: #c60f13 !default;
+$success_color: #5da423 !default;
+
+$shiny_edge: rgba(#fff, .5) !default;
+$dark_edge: rgba(#000, .2) !default;
+
+$button_radius: 3px !default;
+$btn_base: 10px !default;
+
+$tiny_btn_base: $btn_base - 5 !default;
+$small_btn_base: $btn_base - 3 !default;
+$large_btn_base: $btn_base + 5 !default;
+
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 
 $font_smoothing: antialiased !default;
-$header_font_family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$header_font_family: "nimbus-sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $header_font_weight: bold !default;
 $header_font_style: normal !default;
 $header_font_color: #222 !default;
-$body_font_family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body_font_family: "droid-serif", Georgia, serif;
 $body_font_weight: normal !default;
 $body_font_style: normal !default;
 $body_font_color: #222 !default;
