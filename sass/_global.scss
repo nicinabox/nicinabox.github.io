@@ -1,0 +1,37 @@
+*, *:before, *:after { @include box-sizing(border-box); }
+html { font-size: 62.5%; }
+body {
+  background: #fff;
+  font-family: $body_font_family;
+  font-weight: $body_font_weight;
+  font-style: $body_font_style;
+  font-size: ms(0);
+  line-height: 1;
+  color: $body_font_color;
+  position: relative;
+  -webkit-font-smoothing: $font_smoothing;
+}
+
+a img { border:none; }
+a { color: $primary_color; text-decoration: none; line-height: inherit; }
+a:hover { color: darken($primary_color, 5%); }
+a:focus { color: darken($primary_color, 5%); }
+p a, p a:visited { line-height: inherit; }
+
+.left        { float: left; }
+.right       { float: right; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center { text-align: center; }
+.hide        { display: none; }
+.hide-override { display: none !important; }
+.highlight   { background: $highlight_color; }
+
+#googlemap img, object, embed { max-width: none; }
+
+#map_canvas embed { max-width: none; }
+#map_canvas img { max-width: none; }
+#map_canvas object { max-width: none; }
+
+/* Reset for strange margins by default on <figure> elements */
+figure { margin: 0; }

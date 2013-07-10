@@ -1,7 +1,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,th,td {
   margin:0;
   padding:0;
-  font-size: ms(0);
+  // font-size: ms(0);
 }
 
 p { font-family: inherit; font-weight: $body_font_weight; font-size: ms(0); line-height: 1.6; margin-bottom: ms(1);
@@ -16,8 +16,8 @@ h1, h2, h3, h4, h5, h6 {
   color: $header_font_color;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
-  margin-bottom: ms(0);
-  margin-top: ms(0);
+  margin-bottom: ms(0) - 0.5;
+  margin-top: ms(0) - 1;
   small { font-size: 60%; color: lighten($header_font_color, 30%); line-height: 0; }
 }
 
@@ -36,6 +36,10 @@ em, i { font-style: italic; line-height: inherit; }
 strong, b { font-weight: bold; line-height: inherit; }
 small { font-size: 60%; line-height: inherit; }
 code { font-weight: bold; background: $highlight_color; }
+
+pre code {
+  background: none;
+}
 
 /* Lists ---------------------- */
 ul, ol, dl { font-size: ms(0); line-height: 1.6; margin-bottom: ms(1); list-style-position: outside; }

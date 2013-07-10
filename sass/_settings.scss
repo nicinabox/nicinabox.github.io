@@ -1,5 +1,5 @@
-$base-size: 1.125rem 1.8rem;
-$ratio: fifth();
+$base-size: 1.125em 1.8em;
+$ratio: augmented-fourth();
 
 $primary_color: #1B5891;
 $secondary_color: #e9e9e9;
@@ -13,6 +13,8 @@ $default_opposite: right;
 $total_columns: 12;
 $mobile_total_columns: 4;
 $block_grid_elements: 12;
+
+$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 
 $font_smoothing: antialiased !default;
 $header_font_family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;

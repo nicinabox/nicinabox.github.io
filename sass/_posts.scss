@@ -1,0 +1,18 @@
+.post {
+  header {
+    margin-bottom: 2em;
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+  .meta {
+    color: #aaa;
+    font-family: $header_font_family;
+    font-size: ms(0) - 0.1em;
+    margin-top: 10px;
+  }
+  .reading-time {
+    color: #888;
+    font-weight: bold;
+  }
+}
