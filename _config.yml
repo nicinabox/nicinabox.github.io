@@ -2,3 +2,13 @@ name: Nic Aitch
 subtitle: JavaScript hacker.
 pygments: true
 permalink: /blog/:title/
+excerpt_separator: "<!-- more -->"
+
+disqus_short_name: nicinabox
+disqus_show_comment_count: false
+
+# Google Analytics
+google_analytics_tracking_id: #UA-1441888-4
+
+# Gaug.es
+gauges_tracking_id: 4f83803b613f5d23300000a9
