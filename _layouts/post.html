@@ -1,9 +1,17 @@
 ---
-layout: default
+layout: application
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
+<div class="row">
+  <div class="twelve columns">
+    <h2>{{ page.title }}</h2>
+    <p class="meta">{{ page.date | date_to_string }}</p>
+  </div>
 </div>
+
+<article class="post">
+  <div class="row">
+    <div class="twelve columns">
+      {{ content }}
+    </div>
+  </div>
+</article>
