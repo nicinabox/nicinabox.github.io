@@ -1,7 +1,0 @@
----
-published: true
-layout: post
----
-
-# A test post
-Testing publishing from prose.io
