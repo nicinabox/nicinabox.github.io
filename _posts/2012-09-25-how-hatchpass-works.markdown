@@ -7,7 +7,9 @@ categories: [Projects, Software]
 published: true
 ---
 
-#### [Hatchpass](http://beta.hatchpass.org) is a password tool I built to help with the password problem--or, using the same password everywhere. It creates complex, pseudo-random, unique passwords. You don't have to remember any of them.
+<p class="lead">
+  <a href="http://beta.hatchpass.org">Hatchpass</a> is a password tool I built to help with the password problem--or, using the same password everywhere. It creates complex, pseudo-random, unique passwords. You don't have to remember any of them.
+</p>
 
 <!-- more -->
 
