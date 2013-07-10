@@ -1,3 +1,4 @@
 name: Nic Aitch
-subtitle: JavaScript Hacker
+subtitle: JavaScript hacker.
 pygments: true
+permalink: /blog/:title/

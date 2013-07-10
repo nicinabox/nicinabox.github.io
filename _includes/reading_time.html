@@ -1,0 +1,14 @@
+{% assign reading_time = page.content | number_of_words | divided_by: 150 %}
+
+<span class="reading-time">
+  <span class="icon-time"></span>
+  {% case reading_time %}
+  {% when 1 %}
+    About a minute
+  {% when 0 %}
+    Less than a minute
+  {% else %}
+    About {{ reading_time }} minutes
+  {% endcase %}
+  to read
+</span>
