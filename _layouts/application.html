@@ -14,12 +14,7 @@
     <div id="header">
       <div class="row">
         <div class="twelve columns">
-          <a href="{{ root_url }}/" id="logo">
-            {{ site.name }}
-          </a>
-          {% if site.subtitle %}
-            <small>{{ site.subtitle }}</small>
-          {% endif %}
+          {% include header.html %}
         </div>
       </div>
     </div>
