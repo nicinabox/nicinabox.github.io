@@ -46,10 +46,21 @@
   }
 }
 
-.highlight pre {
-  border: 1px solid #ddd;
-  background-color: #fff;
-  padding: 10px;
-  margin: 1em 0;
-  @include border-radius(3px);
+.overview {
+  border-bottom: 5px solid #ddd;
+  padding-bottom: 5px;
+  @extend %content-row;
+  &:before {
+    content: "Contents";
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 6px;
+    display: block;
+    font-family: $header_font_family;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  a {
+    display: block;
+  }
 }

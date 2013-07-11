@@ -69,6 +69,19 @@
       }
     }
   }
+
+  &.detail {
+    .content {
+      padding: 0 ($column_gutter / 2) + 50px;
+      max-width: 1200px;
+      h1, h2, h3, h4, h5, h6, p {
+        @extend %content-row;
+      }
+      .button {
+        max-width: $screen_small - 100px;
+      }
+    }
+  }
 }
 
 #comments {

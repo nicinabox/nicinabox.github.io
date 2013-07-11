@@ -1,3 +1,9 @@
+%content-row {
+  width: $row_width;
+  max-width: 100%;
+  min-width: $screen_small - 100px;
+}
+
 .button {
   border: 0;
   @include box-shadow(none);

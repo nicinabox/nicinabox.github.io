@@ -1,4 +1,4 @@
-<article class="post">
+<article class="post detail">
   <div class="row">
     <div class="twelve columns">
       <header>
@@ -10,8 +10,11 @@
         </p>
       </header>
 
-      {{ content }}
     </div>
+  </div>
+
+  <div class="content">
+    {{ content }}
   </div>
 
   {% if site.disqus_short_name and page.comments == true %}
