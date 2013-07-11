@@ -15,17 +15,62 @@
     color: #888;
   }
   &.featured {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   &.archived {
     a {
+      position: relative;
       font-size: ms(2);
       font-family: $header_font_family;
       font-weight: 300;
       padding: 15px 0;
       border-top: 1px solid #ddd;
       display: block;
+      &:hover {
+        .bar {
+          background: #eee;
+        }
+        .reading-time {
+          @include opacity(1);
+        }
+      }
+    }
+    .title {
+      padding: 0 65px;
+      @media #{$small} {
+        padding: 0 15px;
+      }
+      .reading-time {
+        font-size: 14px;
+        @include transition(opacity 0.15s ease-out);
+        @include opacity(0);
+      }
+    }
+    .words {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      .bar {
+        background: #f1f1f1;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+      }
+      .count {
+        left: 10px;
+        top: 30%;
+        width: 10%;
+        position: absolute;
+        color: #aaa;
+        font-weight: bold;
+        display: none;
+      }
     }
   }
+}
+
+#comments {
+  margin-top: 30px;
 }

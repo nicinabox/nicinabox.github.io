@@ -1,19 +1,16 @@
 {% assign total_words = post.content | number_of_words %}
 
 <article class="post archived">
-  <a href="{{ post.url }}">
-    <div class="words" style="display: none">
+  <a href="{{ post.url }}" data-words="{{ total_words | times: 1 }}">
+    <div class="words">
       <div class="bar"></div>
-      <span class="count">
-        {{ total_words }} <br>
-        words
-      </span>
     </div>
 
-    <div class="row">
-      <div class="twelve columns">
-        {{ post.title }}
-      </div>
+    <div class="title">
+      {{ post.title }}
+
+      {% assign content = post.content %}
+      {% include reading_time.html %}
     </div>
   </a>
 </article>

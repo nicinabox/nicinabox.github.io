@@ -1995,6 +1995,10 @@ img[src*=typekit] {
   border: 0;
   background-color: #ddd;
 }
+/* line 9, ../sass/_ui.scss */
+.button + .button {
+  margin-left: 5px;
+}
 
 @media only screen and (min-width: 650px) {
   /* line 10, ../../../.rvm/gems/ruby-2.0.0-p247@nicinabox/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
@@ -2057,25 +2061,30 @@ img[src*=typekit] {
 #footer {
   border-top: 1px solid #ddd;
   padding: 30px 0;
+  font-size: 14px;
+}
+/* line 33, ../sass/_layout.scss */
+#footer .icon-code {
+  color: #666;
 }
 
-/* line 34, ../sass/_layout.scss */
+/* line 38, ../sass/_layout.scss */
 .row {
   padding: 0 50px;
   margin: 0;
 }
-/* line 37, ../sass/_layout.scss */
+/* line 41, ../sass/_layout.scss */
 .row .row {
   padding: 0;
 }
 @media only screen and (max-width: 649px) {
-  /* line 34, ../sass/_layout.scss */
+  /* line 38, ../sass/_layout.scss */
   .row {
     padding: 0;
   }
 }
 
-/* line 45, ../sass/_layout.scss */
+/* line 49, ../sass/_layout.scss */
 .highlight pre {
   border: 1px solid #ddd;
   background-color: #fff;
@@ -2109,14 +2118,73 @@ img[src*=typekit] {
 }
 /* line 17, ../sass/_posts.scss */
 .post.featured {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 /* line 22, ../sass/_posts.scss */
 .post.archived a {
+  position: relative;
   font-size: 1.59099em;
   font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
   padding: 15px 0;
   border-top: 1px solid #ddd;
   display: block;
+}
+/* line 31, ../sass/_posts.scss */
+.post.archived a:hover .bar {
+  background: #eee;
+}
+/* line 34, ../sass/_posts.scss */
+.post.archived a:hover .reading-time {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 39, ../sass/_posts.scss */
+.post.archived .title {
+  padding: 0 65px;
+}
+@media only screen and (max-width: 649px) {
+  /* line 39, ../sass/_posts.scss */
+  .post.archived .title {
+    padding: 0 15px;
+  }
+}
+/* line 44, ../sass/_posts.scss */
+.post.archived .title .reading-time {
+  font-size: 14px;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  -o-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 50, ../sass/_posts.scss */
+.post.archived .words {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+/* line 55, ../sass/_posts.scss */
+.post.archived .words .bar {
+  background: #f1f1f1;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
+/* line 61, ../sass/_posts.scss */
+.post.archived .words .count {
+  left: 10px;
+  top: 30%;
+  width: 10%;
+  position: absolute;
+  color: #aaa;
+  font-weight: bold;
+  display: none;
+}
+
+/* line 74, ../sass/_posts.scss */
+#comments {
+  margin-top: 30px;
 }
