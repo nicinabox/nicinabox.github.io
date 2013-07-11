@@ -22,6 +22,16 @@ pre code {
   font-family: inherit;
   padding: 0;
 }
+.highlight pre {
+  border: 1px solid #ddd;
+  background-color: #f8f8ff;
+  padding: 10px;
+  margin: 1em 0;
+  @include border-radius(3px);
+}
+.gist .highlight {
+  background: inherit;
+}
 
 img {
   &[src*=typekit] {
