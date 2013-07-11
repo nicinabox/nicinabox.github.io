@@ -11,13 +11,29 @@ Superslides has come a long way in a year. So what's changed?
 
 <!-- more -->
 
+<style>
+  .wide-container {
+    height: 500px;
+    margin-left: -65px;
+    margin-right: -65px;
+    visibility: hidden;
+  }
+  @media screen and (max-width: 649px) {
+    .wide-container {
+      margin-left: -15px;
+      margin-right: -15px;
+      height: 300px;
+    }
+  }
+</style>
+
 <div class="wide-container">
   <div id="slides">
     <div class="slides-container">
-      <img src="/images/posts/chicago-3.jpg">
-      <img src="/images/posts/chicago-2.jpg">
-      <img src="/images/posts/chicago-1.jpg">
       <img src="/images/posts/chicago-4.jpg">
+      <img src="/images/posts/chicago-1.jpg">
+      <img src="/images/posts/chicago-2.jpg">
+      <img src="/images/posts/chicago-3.jpg">
     </div>
     <nav class="slides-navigation">
       <a href="#" class="next">Next</a>
@@ -47,29 +63,27 @@ If you do happen upon a bug, [post an issue on Github](https://github.com/nicina
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
 </script>
+<script src="https://rawgithub.com/EightMedia/hammer.js/master/dist/hammer.min.js">
+</script>
 <script src="https://rawgithub.com/benbarnett/jQuery-Animate-Enhanced/master/jquery.animate-enhanced.min.js">
 </script>
 <script src="https://rawgithub.com/nicinabox/superslides/0.6.2/dist/jquery.superslides.min.js" type="text/javascript" charset="utf-8">
 </script>
 
-<style>
-  .wide-container {
-    height: 500px;
-    margin-left: -65px;
-    margin-right: -65px;
-  }
-  @media screen and (max-width: 767px) {
-    .wide-container {
-      margin-left: -15px;
-      margin-right: -15px;
-      height: 300px;
-    }
-  }
-</style>
-
 <script>
   $(function() {
-    $('#slides').superslides({
+    var $slides = $('#slides');
+    Hammer($slides[0]).on("swipeleft", function(e) {
+      $slides.data('superslides').animate('next');
+    });
+
+    Hammer($slides[0]).on("swiperight", function(e) {
+      $slides.data('superslides').animate('prev');
+    });
+    $slides.on('init.slides', function() {
+      $('.wide-container').css('visibility', 'visible');
+    });
+    $slides.superslides({
       inherit_height_from: '.wide-container',
       play: 5000
     });
