@@ -54,9 +54,16 @@ If you do happen upon a bug, [post an issue on Github](https://github.com/nicina
 
 <style>
   .wide-container {
-    width: 100%;
     height: 500px;
-    margin-bottom: 30px;
+    margin-left: -65px;
+    margin-right: -65px;
+  }
+  @media screen and (max-width: 767px) {
+    .wide-container {
+      margin-left: -15px;
+      margin-right: -15px;
+      height: 300px;
+    }
   }
 </style>
 
@@ -64,7 +71,6 @@ If you do happen upon a bug, [post an issue on Github](https://github.com/nicina
   $(function() {
     $('#slides').superslides({
       inherit_height_from: '.wide-container',
-      animation: 'fade',
       play: 5000
     });
   });
