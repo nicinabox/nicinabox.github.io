@@ -43,6 +43,8 @@ A new examples folder now showcases about a dozen features.
 
 Double image loading, multiples, IE fixes, the works. Many long standing issues resolved on this release;
 
+If you do happen upon a bug, [post an issue on Github](https://github.com/nicinabox/superslides/issues) and we'll get it resolved.
+
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
 </script>
 <script src="https://rawgithub.com/benbarnett/jQuery-Animate-Enhanced/master/jquery.animate-enhanced.min.js">
