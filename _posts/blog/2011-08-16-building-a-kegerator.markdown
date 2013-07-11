@@ -3,7 +3,7 @@ layout: post
 title: "Building a Kegerator"
 date: 2011-08-16 11:51
 comments: true
-categories: Beer
+categories: blog beer
 ---
 
 A couple months ago I decided I'd had enough of drinking stale, bottled beer and that the solution to this problem would be to build a kegerator and get the brewery to fill my keg with fresh brew. Of course, later on I found out that none of the breweries will actually fill personal kegs, at least here in Chicago. C'est la vie. I'll be brewing my own batch soon to fill it instead.
@@ -21,13 +21,13 @@ My fridge had a freezer/icebox in the top of it. It popped right out by removing
 
 ## Remove the lid
 
-This is probably the hardest part. It's glued down tight to the foam insulation and the sides of the fridge. Use a pry tool to slowly work your way around and remove it (You'll want to glue it back on after you're finished). 
+This is probably the hardest part. It's glued down tight to the foam insulation and the sides of the fridge. Use a pry tool to slowly work your way around and remove it (You'll want to glue it back on after you're finished).
 
 ![](http://farm6.static.flickr.com/5061/5846507268_d80bfc06a0_z.jpg)
 
 ## Find the line
 
-I found [this thread](http://www.homebrewtalk.com/f51/frigidaire-model-frc445gb-mini-fridge-kegerator-conversion-89013/) on Home Brew Talk to be extremely helpful. I found where the safe places to mount the tap probably were (in the front), but I wanted mine in the back. It was necessary to cut the insulation out to find the line (carefully, of course) so I could drill around it. I used a spatula, Leatherman, and a bicycle tire iron to remove the insulation. 
+I found [this thread](http://www.homebrewtalk.com/f51/frigidaire-model-frc445gb-mini-fridge-kegerator-conversion-89013/) on Home Brew Talk to be extremely helpful. I found where the safe places to mount the tap probably were (in the front), but I wanted mine in the back. It was necessary to cut the insulation out to find the line (carefully, of course) so I could drill around it. I used a spatula, Leatherman, and a bicycle tire iron to remove the insulation.
 
 ![](http://farm6.static.flickr.com/5151/5846506072_957fdab1da_z.jpg)
 

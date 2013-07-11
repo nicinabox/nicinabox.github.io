@@ -3,7 +3,7 @@ layout: post
 title: "Geektool Scripts"
 date: 2009-4-19 22:29
 comments: true
-categories: Projects
+categories: blog projects
 ---
 
 **UPDATE 8/15/2011:** Most of these scripts have been [repackaged in a gem](http://rubygems.org/gems/geeklets2).

@@ -3,7 +3,7 @@ layout: post
 title: "Plotting elements on a circle with CSS &amp; Ruby"
 date: 2012-04-09 19:19
 comments: true
-categories: Software
+categories: blog software
 published: true
 ---
 

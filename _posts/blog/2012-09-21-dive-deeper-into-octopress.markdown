@@ -3,7 +3,7 @@ layout: post
 title: Dive Deeper Into Octopress
 date: 2012-09-21 23:20
 comments: true
-categories: Thoughts
+categories: blog thoughts
 published: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Color Palette"
 date: 2009-03-12 19:36
 comments: true
-categories: Projects
+categories: blog projects
 published: true
 ---
 

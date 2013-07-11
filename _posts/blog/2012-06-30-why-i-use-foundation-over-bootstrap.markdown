@@ -3,7 +3,7 @@ layout: post
 title: "Why I Use Foundation Over Bootstrap"
 date: 2012-06-30 08:11
 comments: true
-categories: Thoughts
+categories: blog thoughts
 published: true
 ---
 

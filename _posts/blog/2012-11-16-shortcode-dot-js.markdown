@@ -3,6 +3,7 @@ layout: post
 title: "shortcode.js"
 date: 2012-11-16 19:42
 description: A JavaScript implementation of Wordpress shortcodes.
+categories: blog projects
 comments: true
 published: true
 ---

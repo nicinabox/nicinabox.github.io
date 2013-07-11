@@ -3,7 +3,7 @@ layout: post
 title: "Redesign Octopress"
 date: 2012-04-08 15:00
 comments: true
-categories: Thoughts
+categories: blog thoughts
 published: true
 ---
 

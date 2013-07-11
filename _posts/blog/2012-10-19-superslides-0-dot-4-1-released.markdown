@@ -3,7 +3,7 @@ layout: post
 title: "Superslides 0.4.1 Released"
 date: 2012-10-19 10:09
 comments: true
-categories: Projects
+categories: blog projects
 published: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "How Hatchpass Works"
 date: 2012-09-25 20:45
 comments: true
-categories: [Projects, Software]
+categories: blog projects software
 published: true
 ---
 
