@@ -12,6 +12,8 @@ If you are familiar with [Heroku](http://heroku.com), you may know that deployin
   $ git push heroku
 {% endhighlight %}
 
+<!-- more -->
+
 But, this can get really monotonous, especially if you're frequently pushing to a staging app (then you have to specify the branch name as well). To make things a little easier I whipped up a quick shell function to make deployments a snap.
 <!--more-->
 

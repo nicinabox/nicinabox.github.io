@@ -14,7 +14,13 @@
   </div>
 
   <div class="content">
-    {{ content }}
+    {% if page.excerpt %}
+      <div class="excerpt">
+        <p>{{ page.excerpt }}</p>
+      </div>
+    {% endif %}
+
+    {{ content | split: '<!-- more -->' | last }}
   </div>
 
   {% if site.disqus_short_name and page.comments == true %}

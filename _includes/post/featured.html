@@ -12,7 +12,12 @@
       <time>{{ post.date | date: "%B %e, %Y" }}</time>
     </p>
   </header>
-  {{ post.excerpt }}
+
+  {% if post.excerpt %}
+    <div class="excerpt">
+      {{ post.excerpt }}
+    </div>
+  {% endif %}
 
   <a class="" href="{{ post.url }}">
     Continue Reading &rarr;

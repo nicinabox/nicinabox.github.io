@@ -7,6 +7,8 @@ categories: blog projects
 published: true
 ---
 
+<!-- more -->
+
 I've released an update for [Superslides](http://nicinabox.github.com/superslides/) that includes some bugfixes for mobile/responsive and  a couple new features (scrollable content and additional non-fullscreen images).
 
 Your feedback is always welcome!

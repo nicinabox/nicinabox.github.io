@@ -6,19 +6,17 @@ comments: true
 categories: blog projects
 ---
 
-**UPDATE 8/15/2011:** Most of these scripts have been [repackaged in a gem](http://rubygems.org/gems/geeklets2).
-***
-<nav class="try">
-  <a class="download" href="https://github.com/nicinabox/Geektool-Scripts/zipball/master">Download <small>v1.7 (Github)</small></a>
-</nav>
-
 These are an ever growing compilation of scripts and code snippets that I have written or collected in a format that’s easy to understand and use. If you need help feel free to email me at [nic@nicinabox.com](mailto:nic@nicinabox.com), **but please read the documentation first**.
+
+<!-- more -->
+
+**UPDATE 8/15/2011** Most of these scripts have been [repackaged in a gem](http://rubygems.org/gems/geeklets2).
+
+<a class="button radius" href="https://github.com/nicinabox/Geektool-Scripts/zipball/master">Download <small>v1.7 (Github)</small></a>
 
 I encourage you to checkout some of the Desktop screenshots on Flickr (some are very nice!) for ideas.If you have a script or something clever you'd like to add to this collection, please contact me.
 
 These commands require that you actually install the scripts. Some are built into the system, but most are custom. For more information, check `readme.html` included in the download.
-
-<!--more-->
 
 This package includes the following:
 

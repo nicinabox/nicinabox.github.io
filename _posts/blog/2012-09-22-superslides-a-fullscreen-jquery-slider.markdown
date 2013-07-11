@@ -7,9 +7,7 @@ categories: blog projects
 published: true
 ---
 
-<p class="lead">
-  Back in April 2012 I started working on a fullscreen JavaScript slider called <a href="http://nicinabox.github.com/superslides/">Superslides</a>. It's had some interest, so I wanted to officially announce it here.
-</p>
+Back in April 2012 I started working on a fullscreen JavaScript slider called <a href="http://nicinabox.github.com/superslides/">Superslides</a>. It's had some interest, so I wanted to officially announce it here.
 
 <!-- more -->
 

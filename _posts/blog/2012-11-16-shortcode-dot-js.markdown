@@ -8,9 +8,7 @@ comments: true
 published: true
 ---
 
-<p class="lead">
-  If you know about Wordpress' shortcodes, then this should already be familiar to you. In any case, read on my gallant friend.
-</p>
+If you know about Wordpress' shortcodes, then this should already be familiar to you. In any case, read on my gallant friend.
 
 <!-- more -->
 

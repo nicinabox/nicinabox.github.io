@@ -6,10 +6,11 @@ comments: true
 categories: blog beer
 ---
 
-A couple months ago I decided I'd had enough of drinking stale, bottled beer and that the solution to this problem would be to build a kegerator and get the brewery to fill my keg with fresh brew. Of course, later on I found out that none of the breweries will actually fill personal kegs, at least here in Chicago. C'est la vie. I'll be brewing my own batch soon to fill it instead.
-
 Here is a little walkthrough of disassembling the the fridge and modifications that I made. I'm using a [Frigidaire FFPH44M4LB fridge](http://goo.gl/700Lb). It's 4.4 cu. ft. and will fit 2 Cornelius kegs and a 5lb C02 tank in the back.
-<!--more-->
+
+<!-- more -->
+
+A couple months ago I decided I'd had enough of drinking stale, bottled beer and that the solution to this problem would be to build a kegerator and get the brewery to fill my keg with fresh brew. Of course, later on I found out that none of the breweries will actually fill personal kegs, at least here in Chicago. C'est la vie. I'll be brewing my own batch soon to fill it instead.
 
 ## Gather your parts
 
