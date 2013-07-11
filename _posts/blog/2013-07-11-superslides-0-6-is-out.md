@@ -18,11 +18,47 @@ Superslides has come a long way in a year. So what's changed?
     margin-right: -65px;
     visibility: hidden;
   }
+  #slides {
+    position: relative;
+  }
+  #slides .slides-container {
+    display: none;
+  }
+  .slides-navigation {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: Lato;
+    font-weight: bold;
+  }
+  .slides-navigation a {
+    position: absolute;
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 46px;
+    text-shadow: 0 1px 1px #000;
+    top: 204px;
+  }
+  .slides-navigation a.prev {
+    left: 0;
+  }
+  .slides-navigation a.next {
+    right: 0;
+    text-align: right;
+  }
+
   @media screen and (max-width: 649px) {
     .wide-container {
       margin-left: -15px;
       margin-right: -15px;
       height: 300px;
+    }
+    .slides-navigation a {
+      top: 104px;
     }
   }
 </style>
@@ -36,8 +72,14 @@ Superslides has come a long way in a year. So what's changed?
       <img src="/images/posts/chicago-3.jpg">
     </div>
     <nav class="slides-navigation">
-      <a href="#" class="next">Next</a>
-      <a href="#" class="prev">Previous</a>
+      <a href="#" class="next">
+        <i class="icon-angle-right">
+        </i>
+      </a>
+      <a href="#" class="prev">
+        <i class="icon-angle-left">
+        </i>
+      </a>
     </nav>
   </div>
 </div>
@@ -84,8 +126,7 @@ If you do happen upon a bug, [post an issue on Github](https://github.com/nicina
       $('.wide-container').css('visibility', 'visible');
     });
     $slides.superslides({
-      inherit_height_from: '.wide-container',
-      play: 5000
+      inherit_height_from: '.wide-container'
     });
   });
 </script>
