@@ -45,6 +45,9 @@
         font-size: 14px;
         @include transition(opacity 0.15s ease-out);
         @include opacity(0);
+        @media #{$small} {
+          display: none;
+        }
       }
     }
     .words {
@@ -79,6 +82,9 @@
       }
       .button {
         max-width: $screen_small - 100px;
+      }
+      @media #{$small} {
+        padding: 0 ($column_gutter / 2);
       }
     }
   }
