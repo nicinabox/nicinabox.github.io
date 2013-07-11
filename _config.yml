@@ -14,6 +14,9 @@ google_analytics_tracking_id: #UA-1441888-4
 gauges_tracking_id: 4f83803b613f5d23300000a9
 
 prose:
+  rooturl: 
+    - blog
+    - projects
   siteurl: "http://nicinabox.com"
   media: "images"
   metadata:
