@@ -377,7 +377,6 @@ body {
   line-height: 1;
   color: #222222;
   position: relative;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* line 15, ../sass/_global.scss */
@@ -387,19 +386,19 @@ a img {
 
 /* line 16, ../sass/_global.scss */
 a {
-  color: #1b5891;
+  color: #1f65a7;
   text-decoration: none;
   line-height: inherit;
 }
 
 /* line 17, ../sass/_global.scss */
 a:hover {
-  color: #174b7c;
+  color: #1b5891;
 }
 
 /* line 18, ../sass/_global.scss */
 a:focus {
-  color: #174b7c;
+  color: #1b5891;
 }
 
 /* line 19, ../sass/_global.scss */
@@ -477,8 +476,8 @@ figure {
 /* line 3, ../sass/_buttons.scss */
 .button {
   width: auto;
-  background: #1b5891;
-  border: 1px solid #0f3151;
+  background: #1f65a7;
+  border: 1px solid #133e66;
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -508,7 +507,7 @@ figure {
 /* line 6, ../sass/_buttons.scss */
 .button:hover, .button:focus {
   color: white;
-  background-color: #133e66;
+  background-color: #174b7c;
 }
 /* line 7, ../sass/_buttons.scss */
 .button:active {
@@ -542,12 +541,12 @@ figure {
 }
 /* line 17, ../sass/_buttons.scss */
 .button.primary {
-  background-color: #1b5891;
-  border: 1px solid #0f3151;
+  background-color: #1f65a7;
+  border: 1px solid #133e66;
 }
 /* line 18, ../sass/_buttons.scss */
 .button.primary:hover, .button.primary:focus {
-  background-color: #133e66;
+  background-color: #174b7c;
 }
 /* line 20, ../sass/_buttons.scss */
 .button.success {
@@ -609,14 +608,14 @@ figure {
 .button.disabled, .button[disabled] {
   opacity: 0.6;
   cursor: default;
-  background: #1b5891;
+  background: #1f65a7;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 /* line 40, ../sass/_buttons.scss */
 .button.disabled:hover, .button[disabled]:hover {
-  background: #1b5891;
+  background: #1f65a7;
 }
 /* line 42, ../sass/_buttons.scss */
 .button.disabled.success, .button[disabled].success {
@@ -750,7 +749,7 @@ input[type=submit].button, button.button {
 }
 /* line 81, ../sass/_buttons.scss */
 .button.dropdown > ul li:hover, .button.dropdown > ul li:focus {
-  background-color: #a4caee;
+  background-color: #b9d7f2;
   color: #222;
 }
 /* line 82, ../sass/_buttons.scss */
@@ -1644,8 +1643,8 @@ aside p {
 
 /* line 12, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "nimbus-sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   font-style: normal;
   color: #222222;
   text-rendering: optimizeLegibility;
@@ -1989,7 +1988,7 @@ img[src*=typekit] {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  font-family: "nimbus-sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 5, ../sass/_ui.scss */
 .button.secondary {
@@ -2037,7 +2036,7 @@ img[src*=typekit] {
 }
 /* line 13, ../sass/_layout.scss */
 #header a {
-  font-family: "nimbus-sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1.59099em;
   color: #666;
   padding: 10px 0;
@@ -2100,7 +2099,7 @@ img[src*=typekit] {
 /* line 8, ../sass/_posts.scss */
 .post .meta {
   color: #aaa;
-  font-family: "nimbus-sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1.025em;
   margin-top: 10px;
 }
@@ -2115,7 +2114,7 @@ img[src*=typekit] {
 /* line 22, ../sass/_posts.scss */
 .post.archived a {
   font-size: 1.59099em;
-  font-family: "nimbus-sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
   padding: 15px 0;
   border-top: 1px solid #ddd;
