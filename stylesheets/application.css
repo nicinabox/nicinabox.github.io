@@ -1628,7 +1628,7 @@ p {
   margin-bottom: 1.27279em;
 }
 /* line 8, ../sass/_typography.scss */
-p.lead {
+p.lead, .excerpt p {
   font-size: 1.40625em;
   line-height: 1.6;
   margin-bottom: 1.27279em;
