@@ -99,7 +99,7 @@ A new examples folder now showcases about a dozen features.
 
 #### Performance fixes
 
-Double image loading, multiples, IE fixes, the works. Many long standing issues resolved on this release;
+Double image loading, multiples, IE fixes, the works. Many long standing issues resolved on this release.
 
 If you do happen upon a bug, [post an issue on Github](https://github.com/nicinabox/superslides/issues) and we'll get it resolved.
 
