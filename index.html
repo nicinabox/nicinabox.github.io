@@ -4,20 +4,36 @@ title: Nic Aitch
 ---
 
 <div id="home">
-  <div class="posts">
+  <div class="latest">
+    <div class="row">
+      <div class="twelve columns">
+        {% assign post = site.categories.blog.first %}
+        {% include post/featured.html %}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <nav class="switcher">
+          <span class="label">Viewing </span>
+          <a href="#posts" class="active">Posts</a>
+          <a href="#projects">Projects</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div id="posts" class="switch-content active">
     {% for post in site.categories.blog %}
       {% if forloop.index > 1 %}
         {% include post/micro.html %}
-
-      {% else %}
-        <div class="row">
-          <div class="twelve columns">
-            {% include post/featured.html %}
-          </div>
-        </div>
-
       {% endif %}
+    {% endfor %}
+  </div>
 
+  <div id="projects" class="switch-content">
+    {% for project in site.categories.project %}
+      {% include project/micro.html %}
     {% endfor %}
   </div>
 

@@ -1,0 +1,56 @@
+.project.intro {
+  border-top: 1px solid #ddd;
+  padding: 25px 0;
+  header {
+    font-family: $header_font_family;
+    padding: 0 65px;
+    @include clearfix;
+    h2 {
+      font-weight: 300;
+      float: left;
+    }
+  }
+  nav {
+    font-family: $header_font_family;
+    float: left;
+    margin: 0 -12px 0;
+    a {
+      display: block;
+      float: left;
+      padding: 3px 12px 6px;
+      font-size: ms(0) + 0.1em;
+      i {
+        color: silver;
+        margin-right: 5px;
+        // font-size: ms(0) - 0.1em;
+        &.icon-angle-right {
+          margin-right: 0;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  @media #{$small} {
+    header {
+      padding: 0 15px;
+      h2 {
+        float: none;
+      }
+    }
+    nav {
+      @include clearfix;
+      float: none;
+      margin: 0 0 10px 0;
+      a {
+        padding: 6px 12px;
+        width: 48%;
+        background: #eee;
+        text-align: center;
+        border-radius: 3px;
+        + a {
+          margin-left: 2%;
+        }
+      }
+    }
+  }
+}

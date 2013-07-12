@@ -20,3 +20,36 @@
     margin-left: 5px;
   }
 }
+
+.switcher {
+  font-family: $header_font_family;
+  a {
+    display: block;
+    float: left;
+    padding: 2px 12px 4px;
+    @include border-radius(20px);
+    margin-bottom: 10px;
+    + a {
+      margin-left: 5px;
+    }
+    &:hover {
+      background: $secondary_color;
+    }
+    &.active {
+      background: $primary_color;
+      color: white;
+    }
+  }
+  .label {
+    float: left;
+    color: gray;
+    display: block;
+    margin-right: 14px;
+  }
+}
+.switch-content {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

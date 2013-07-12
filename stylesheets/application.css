@@ -2044,6 +2044,52 @@ img[src*=typekit] {
   margin-left: 5px;
 }
 
+/* line 24, ../sass/_ui.scss */
+.switcher {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+/* line 26, ../sass/_ui.scss */
+.switcher a {
+  display: block;
+  float: left;
+  padding: 2px 12px 4px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+/* line 32, ../sass/_ui.scss */
+.switcher a + a {
+  margin-left: 5px;
+}
+/* line 35, ../sass/_ui.scss */
+.switcher a:hover {
+  background: #e9e9e9;
+}
+/* line 38, ../sass/_ui.scss */
+.switcher a.active {
+  background: #1f65a7;
+  color: white;
+}
+/* line 43, ../sass/_ui.scss */
+.switcher .label {
+  float: left;
+  color: gray;
+  display: block;
+  margin-right: 14px;
+}
+
+/* line 50, ../sass/_ui.scss */
+.switch-content {
+  display: none;
+}
+/* line 52, ../sass/_ui.scss */
+.switch-content.active {
+  display: block;
+}
+
 @media only screen and (min-width: 650px) {
   /* line 10, ../../../.rvm/gems/ruby-2.0.0-p247@nicinabox/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
   html, body {
@@ -2116,29 +2162,35 @@ img[src*=typekit] {
 #home {
   margin-bottom: -30px;
 }
+/* line 39, ../sass/_layout.scss */
+#home .latest {
+  background: #fbfbfb;
+  margin-top: -30px;
+  padding-top: 30px;
+}
 
-/* line 41, ../sass/_layout.scss */
+/* line 46, ../sass/_layout.scss */
 .row {
   padding: 0 50px;
   margin: 0;
 }
-/* line 44, ../sass/_layout.scss */
+/* line 49, ../sass/_layout.scss */
 .row .row {
   padding: 0;
 }
 @media only screen and (max-width: 649px) {
-  /* line 41, ../sass/_layout.scss */
+  /* line 46, ../sass/_layout.scss */
   .row {
     padding: 0;
   }
 }
 
-/* line 52, ../sass/_layout.scss */
+/* line 57, ../sass/_layout.scss */
 .overview {
   border-bottom: 5px solid #ddd;
   padding-bottom: 5px;
 }
-/* line 56, ../sass/_layout.scss */
+/* line 61, ../sass/_layout.scss */
 .overview:before {
   content: "Contents";
   color: #aaa;
@@ -2149,7 +2201,7 @@ img[src*=typekit] {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 66, ../sass/_layout.scss */
+/* line 71, ../sass/_layout.scss */
 .overview a {
   display: block;
 }
@@ -2265,4 +2317,74 @@ img[src*=typekit] {
 /* line 93, ../sass/_posts.scss */
 #comments {
   margin-top: 30px;
+}
+
+/* line 1, ../sass/_projects.scss */
+.project.intro {
+  border-top: 1px solid #ddd;
+  padding: 25px 0;
+}
+/* line 4, ../sass/_projects.scss */
+.project.intro header {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  padding: 0 65px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 8, ../sass/_projects.scss */
+.project.intro header h2 {
+  font-weight: 300;
+  float: left;
+}
+/* line 13, ../sass/_projects.scss */
+.project.intro nav {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  float: left;
+  margin: 0 -12px 0;
+}
+/* line 17, ../sass/_projects.scss */
+.project.intro nav a {
+  display: block;
+  float: left;
+  padding: 3px 12px 6px;
+  font-size: 1.225em;
+}
+/* line 22, ../sass/_projects.scss */
+.project.intro nav a i {
+  color: silver;
+  margin-right: 5px;
+}
+/* line 26, ../sass/_projects.scss */
+.project.intro nav a i.icon-angle-right {
+  margin-right: 0;
+  margin-left: 5px;
+}
+@media only screen and (max-width: 649px) {
+  /* line 34, ../sass/_projects.scss */
+  .project.intro header {
+    padding: 0 15px;
+  }
+  /* line 36, ../sass/_projects.scss */
+  .project.intro header h2 {
+    float: none;
+  }
+  /* line 40, ../sass/_projects.scss */
+  .project.intro nav {
+    overflow: hidden;
+    *zoom: 1;
+    float: none;
+    margin: 0 0 10px 0;
+  }
+  /* line 44, ../sass/_projects.scss */
+  .project.intro nav a {
+    padding: 6px 12px;
+    width: 48%;
+    background: #eee;
+    text-align: center;
+    border-radius: 3px;
+  }
+  /* line 50, ../sass/_projects.scss */
+  .project.intro nav a + a {
+    margin-left: 2%;
+  }
 }

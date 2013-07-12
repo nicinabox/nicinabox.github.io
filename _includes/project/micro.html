@@ -1,0 +1,28 @@
+<article class="project intro">
+  <header>
+    <h2>
+      {{ project.title }}
+    </h2>
+  </header>
+
+  <div class="row">
+    <div class="twelve columns">
+      {{ project.excerpt }}
+
+      <nav>
+        {% if project.code %}
+          <a href="{{ project.code }}" target="_blank">
+            <i class="icon-beaker"></i> Code
+          </a>
+        {% endif %}
+
+        {% if project.launch %}
+          <a href="{{ project.launch }}" target="_blank">
+            Launch <i class="icon-angle-right"></i>
+          </a>
+        {% endif %}
+      </nav>
+    </div>
+  </div>
+
+</article>
