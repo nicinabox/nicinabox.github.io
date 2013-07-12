@@ -2012,6 +2012,19 @@ img[src*=typekit] {
   color: gray;
 }
 
+/* line 57, ../sass/_formatting.scss */
+.label {
+  font-size: 0.6em;
+  text-transform: uppercase;
+  background: silver;
+  color: white;
+  padding: 3px 5px;
+  display: block;
+  float: left;
+  border-radius: 3px;
+  margin: 1em;
+}
+
 /* line 1, ../sass/_ui.scss */
 .overview, .post.detail .content h1, .post.detail .content h2, .post.detail .content h3, .post.detail .content h4, .post.detail .content h5, .post.detail .content h6, .post.detail .content p {
   width: 550px;
@@ -2074,7 +2087,7 @@ img[src*=typekit] {
   color: white;
 }
 /* line 43, ../sass/_ui.scss */
-.switcher .label {
+.switcher span {
   float: left;
   color: gray;
   display: block;
@@ -2354,28 +2367,28 @@ img[src*=typekit] {
   color: silver;
   margin-right: 5px;
 }
-/* line 26, ../sass/_projects.scss */
+/* line 25, ../sass/_projects.scss */
 .project.intro nav a i.icon-angle-right {
   margin-right: 0;
   margin-left: 5px;
 }
 @media only screen and (max-width: 649px) {
-  /* line 34, ../sass/_projects.scss */
+  /* line 33, ../sass/_projects.scss */
   .project.intro header {
     padding: 0 15px;
   }
-  /* line 36, ../sass/_projects.scss */
+  /* line 35, ../sass/_projects.scss */
   .project.intro header h2 {
     float: none;
   }
-  /* line 40, ../sass/_projects.scss */
+  /* line 39, ../sass/_projects.scss */
   .project.intro nav {
     overflow: hidden;
     *zoom: 1;
     float: none;
     margin: 0 0 10px 0;
   }
-  /* line 44, ../sass/_projects.scss */
+  /* line 43, ../sass/_projects.scss */
   .project.intro nav a {
     padding: 6px 12px;
     width: 48%;
@@ -2383,7 +2396,7 @@ img[src*=typekit] {
     text-align: center;
     border-radius: 3px;
   }
-  /* line 50, ../sass/_projects.scss */
+  /* line 49, ../sass/_projects.scss */
   .project.intro nav a + a {
     margin-left: 2%;
   }

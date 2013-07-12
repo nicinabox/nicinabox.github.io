@@ -15,7 +15,7 @@ title: Nic Aitch
     <div class="row">
       <div class="twelve columns">
         <nav class="switcher">
-          <span class="label">Viewing </span>
+          <span>Viewing </span>
           <a href="#posts" class="active">Posts</a>
           <a href="#projects">Projects</a>
         </nav>
@@ -32,7 +32,8 @@ title: Nic Aitch
   </div>
 
   <div id="projects" class="switch-content">
-    {% for project in site.categories.project %}
+    {% assign projects = site.categories.project | sort:"name" %}
+    {% for project in projects %}
       {% include project/micro.html %}
     {% endfor %}
   </div>

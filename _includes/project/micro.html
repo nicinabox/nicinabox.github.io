@@ -2,7 +2,12 @@
   <header>
     <h2>
       {{ project.title }}
+
     </h2>
+
+    {% if project.experimental %}
+      <span class="label">Experimental</span>
+    {% endif %}
   </header>
 
   <div class="row">
