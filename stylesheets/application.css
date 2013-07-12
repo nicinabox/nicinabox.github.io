@@ -2089,7 +2089,7 @@ img[src*=typekit] {
 /* line 43, ../sass/_ui.scss */
 .switcher span {
   float: left;
-  color: gray;
+  color: #999;
   display: block;
   margin-right: 14px;
 }
