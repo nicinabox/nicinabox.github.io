@@ -1,0 +1,330 @@
+<style>
+  ul#colors {
+    overflow: auto;
+  }
+  ul#colors .caps {
+    display: inline !important;
+  }
+  ul#colors, #colors li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul#colors li {
+    border: 1px solid #aaa;
+    padding: 1px;
+    width: 150px;
+    height: 75px;
+    margin: 5px;
+    float: left;
+  }
+  ul#colors li div {
+    height: 100%;
+    padding: 5px;
+  }
+  #colors .color_name, #colors .color_hex {
+    padding: 3px;
+    color: white;
+    background: #000;
+    background: rgba(0, 0, 0, .3);
+    display: block;
+    opacity: 0;
+    -moz-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+  }
+  ul#colors li:hover .color_name, ul#colors li:hover .color_hex {
+    display: block;
+    opacity: 1;
+  }
+  ul#colors .color_name {
+      font-size: 12px;
+  }
+  ul#colors .color_hex {
+      font-size: 18px;
+  }
+</style>
+
+<style>
+  .color_30boxes_purple { background: #5B5B95 }
+  .color_43_things_gold { background: #C79810 }
+  .color_43things_mustard { background: #C69D18 }
+  .color_basecamp_green { background: #6BBA70 }
+  .color_blinklist_ghost_white { background: #F7F7FF }
+  .color_blinklist_orange { background: #FF6600 }
+  .color_bloglines_blue { background: #1393C0 }
+  .color_bloglines_turquoise { background: #4CADD4 }
+  .color_boing_boing_red { background: #FF0000 }
+  .color_box_net_blue { background: #277FBA }
+  .color_calendarhub_blue { background: #57A9FD }
+  .color_chaamp_fire_brick { background: #B71313 }
+  .color_clipmarks_dark_khaki { background: #9AC65C }
+  .color_cocomment_blue { background: #0e63fd }
+  .color_confluence_green { background: #99cc33 }
+  .color_counterspot_pale_goldenrod { background: #D6EBAD }
+  .color_counterspot_powder_blue { background: #ADE3EF }
+  .color_craigslist_blue { background: #3775e2 }
+  .color_crazyegg_green { background: #8dbb01 }
+  .color_daylife_orange { background: #FFB640 }
+  .color_del_icio_us_grey { background: #EFEFEF }
+  .color_digg_blue { background: #1B5891 }
+  .color_digg_blue_2 { background: #356AA0 }
+  .color_digg_light_yellow { background: #FFF298 }
+  .color_dodgeball_red { background: #E24602 }
+  .color_drop_books_blue { background: #4CAAE4 }
+  .color_ebay_yellow { background: #FFCC00 }
+  .color_etsy_brown { background: #CF5700 }
+  .color_etsy_vermillion { background: #D15600 }
+  .color_eventful_purple { background: #5D82FF }
+  .color_eyespot_blue { background: #00BADA }
+  .color_facebook_blue { background: #3B5999 }
+  .color_feedburner_blue { background: #0170CA }
+  .color_feedburner_red { background: #EB003A }
+  .color_feedster_green { background: #98CC00 }
+  .color_firefox_maroon { background: #BD1D01 }
+  .color_flickr_light_blue { background: #0061DE }
+  .color_flickr_pink { background: #FF0084 }
+  .color_flock_black { background: #0F0F0F }
+  .color_flock_blue { background: #4096EE }
+  .color_frappr_red { background: #A71A10 }
+  .color_furl_blue { background: #025AA2 }
+  .color_furl_red { background: #E84C1F }
+  .color_gimme20_hot_pink { background: #FD65C2 }
+  .color_gmail_alice_blue { background: #EFEFFF }
+  .color_gmail_blue { background: #C3D9FF }
+  .color_gnoos_red { background: #D50000 }
+  .color_google_white { background: #FFFFFF }
+  .color_hi5_orange { background: #EF9A19 }
+  .color_interactive_action_yellow { background: #FFFF88 }
+  .color_jaiku_green { background: #96C63F }
+  .color_judys_book_blue { background: #69DBFF }
+  .color_karmadu_gold { background: #FFC300 }
+  .color_kiko_light_steel_blue { background: #9CB6DE }
+  .color_last_fm_crimson { background: #D61C39 }
+  .color_last_fm_red { background: #D10039 }
+  .color_lifelog_pink { background: #FE198E }
+  .color_lijit_green { background: #BEDB8A }
+  .color_linkedin_blue { background: #1A7FB3 }
+  .color_listable_coral { background: #FF7B38 }
+  .color_listable_orange { background: #FF7638 }
+  .color_live_journal_blue { background: #3D5381 }
+  .color_ma_gnolia_creme { background: #F3F3CC }
+  .color_ma_gnolia_yellow { background: #FEBF0F }
+  .color_magnolia_mag_nolia { background: #F9F7ED }
+  .color_mashable_pink { background: #F28FBF }
+  .color_meebo_orange { background: #FF910D }
+  .color_meetup_red { background: #E51837 }
+  .color_microsoft_blue { background: #87C1E7 }
+  .color_minti_green { background: #009F59 }
+  .color_minutesinaminute_teal { background: #00457B }
+  .color_minutesinaminute_blue { background: #2971AD }
+  .color_moodmill_pastel { background: #FA9B65 }
+  .color_mozilla_blue { background: #3F4C6B }
+  .color_mozilla_red { background: #FF1A00 }
+  .color_myspace_blue { background: #003399 }
+  .color_netscape_aqua { background: #478898 }
+  .color_netvibes_green { background: #62B857 }
+  .color_newsvine_green { background: #006E2E }
+  .color_newsvine_green_2 { background: #00722D }
+  .color_ning_green { background: #339900 }
+  .color_odeo_pink { background: #EC449B }
+  .color_onmylist_brown { background: #5A471C }
+  .color_oodle_black { background: #030303 }
+  .color_openid_orange { background: #FF6200 }
+  .color_pageflakes_grey { background: #D9DDE9 }
+  .color_pandora_antique_white { background: #EFEBCE }
+  .color_pandora_blue { background: #295E92 }
+  .color_pingomatic_lime_green { background: #28CF21 }
+  .color_pownce_black { background: #383121 }
+  .color_qoop_mint { background: #CDEB8B }
+  .color_reddit_red { background: #FF4600 }
+  .color_riya_green { background: #6DC646 }
+  .color_rollyo_red { background: #CC0000 }
+  .color_rss_orange { background: #FF7400 }
+  .color_ruby_on_rails_red { background: #B02B2C }
+  .color_ryze_red { background: #E51905 }
+  .color_say_so_red { background: #C00000 }
+  .color_scouta_orange { background: #F78325 }
+  .color_seomoz_maroon { background: #924357 }
+  .color_shadows_grey { background: #36393D }
+  .color_shiny_silver { background: #EEEEEE }
+  .color_shopify_green { background: #87BE2F }
+  .color_skype_blue { background: #6CD0F6 }
+  .color_slashdot_green { background: #03646A }
+  .color_slide_share_aqua { background: #00A8AA }
+  .color_smug_mug_green { background: #89C122 }
+  .color_spoke_green { background: #9AC80D }
+  .color_spotplex_blue { background: #6B9CC9 }
+  .color_spurl_blue { background: #6699CC }
+  .color_spurl_grey { background: #505050 }
+  .color_squidoo_blue { background: #21628C }
+  .color_squidoo_mustard { background: #E5791E }
+  .color_stumbleupon_blue { background: #057DB9 }
+  .color_stumbleupon_green { background: #2ACC54 }
+  .color_swicki_black { background: #000000 }
+  .color_tagworld_green { background: #5EBE8F }
+  .color_tailrank_red { background: #780000 }
+  .color_techcrunch_green { background: #008C00 }
+  .color_technorati_lime_green { background: #4ABA00 }
+  .color_the_broth_grey { background: #7F7F7F }
+  .color_thembid_red { background: #EA0101 }
+  .color_threadless_blue { background: #003368 }
+  .color_twitter_blue { background: #AFEAEE }
+  .color_upcoming_yellow { background: #FCBD00 }
+  .color_vimeo_grey { background: #E7E7DE }
+  .color_voo2do_com_lemon_chiffon { background: #FFFFBD }
+  .color_vox_red { background: #D71920 }
+  .color_wayfaring_green { background: #128F34 }
+  .color_wikipedia_black { background: #0F0E13 }
+  .color_wikipedia_lavender { background: #DEEBFF }
+  .color_wordpress_blue { background: #174C89 }
+  .color_writeboard_green { background: #64BB69 }
+  .color_writely_olive { background: #73880A }
+  .color_writely_sandy_brown { background: #F3AE48 }
+  .color_xanga_green { background: #4DB848 }
+  .color_yahoo_red { background: #FC0234 }
+  .color_youtube_tomato { background: #FF6666 }
+  .color_ziki_blue { background: #03A0FA }
+</style>
+
+<ul id="colors">
+  <li><div class="color_30boxes_purple"><span class="color_hex">#5B5B95</span><span class="color_name">30Boxes Purple </span></div></li>
+  <li><div class="color_43_things_gold"><span class="color_hex">#C79810</span><span class="color_name">43 Things Gold </span></div></li>
+  <li><div class="color_43things_mustard"><span class="color_hex">#C69D18</span><span class="color_name">43Things Mustard </span></div></li>
+  <li><div class="color_basecamp_green"><span class="color_hex">#6BBA70</span><span class="color_name">BaseCamp Green </span></div></li>
+  <li><div class="color_blinklist_ghost_white"><span class="color_hex">#F7F7FF</span><span class="color_name">BlinkList Ghost White </span></div></li>
+  <li><div class="color_blinklist_orange"><span class="color_hex">#FF6600</span><span class="color_name">BlinkList Orange </span></div></li>
+  <li><div class="color_bloglines_blue"><span class="color_hex">#1393C0</span><span class="color_name">BlogLines Blue </span></div></li>
+  <li><div class="color_bloglines_turquoise"><span class="color_hex">#4CADD4</span><span class="color_name">BlogLines Turquoise </span></div></li>
+  <li><div class="color_boing_boing_red"><span class="color_hex">#FF0000</span><span class="color_name">Boing Boing Red </span></div></li>
+  <li><div class="color_box_net_blue"><span class="color_hex">#277FBA</span><span class="color_name">Box.net Blue</span></div></li>
+  <li><div class="color_calendarhub_blue"><span class="color_hex">#57A9FD</span><span class="color_name">CalendarHub Blue </span></div></li>
+  <li><div class="color_chaamp_fire_brick"><span class="color_hex">#B71313</span><span class="color_name">Chaamp Fire Brick </span></div></li>
+  <li><div class="color_clipmarks_dark_khaki"><span class="color_hex">#9AC65C</span><span class="color_name">ClipMarks Dark Khaki </span></div></li>
+  <li><div class="color_cocomment_blue"><span class="color_hex">#0e63fd</span><span class="color_name">CoComment Blue </span></div></li>
+  <li><div class="color_confluence_green"><span class="color_hex">#99cc33</span><span class="color_name">Confluence Green </span></div></li>
+  <li><div class="color_counterspot_pale_goldenrod"><span class="color_hex">#D6EBAD</span><span class="color_name">CounterSpot Pale Goldenrod </span></div></li>
+  <li><div class="color_counterspot_powder_blue"><span class="color_hex">#ADE3EF</span><span class="color_name">CounterSpot Powder Blue </span></div></li>
+  <li><div class="color_craigslist_blue"><span class="color_hex">#3775e2</span><span class="color_name">CraigsList Blue </span></div></li>
+  <li><div class="color_crazyegg_green"><span class="color_hex">#8dbb01</span><span class="color_name">CrazyEgg Green </span></div></li>
+  <li><div class="color_daylife_orange"><span class="color_hex">#FFB640</span><span class="color_name">DayLife Orange </span></div></li>
+  <li><div class="color_del_icio_us_grey"><span class="color_hex">#EFEFEF</span><span class="color_name">Del.icio.us Grey</span></div></li>
+  <li><div class="color_digg_blue"><span class="color_hex">#1B5891</span><span class="color_name">Digg Blue </span></div></li>
+  <li><div class="color_digg_blue_2"><span class="color_hex">#356AA0</span><span class="color_name">Digg Blue 2 </span></div></li>
+  <li><div class="color_digg_light_yellow"><span class="color_hex">#FFF298</span><span class="color_name">Digg Light Yellow </span></div></li>
+  <li><div class="color_dodgeball_red"><span class="color_hex">#E24602</span><span class="color_name">DodgeBall Red </span></div></li>
+  <li><div class="color_drop_books_blue"><span class="color_hex">#4CAAE4</span><span class="color_name">Drop Books Blue </span></div></li>
+  <li><div class="color_ebay_yellow"><span class="color_hex">#FFCC00</span><span class="color_name">Ebay Yellow </span></div></li>
+  <li><div class="color_etsy_brown"><span class="color_hex">#CF5700</span><span class="color_name">Etsy Brown </span></div></li>
+  <li><div class="color_etsy_vermillion"><span class="color_hex">#D15600</span><span class="color_name">Etsy Vermillion </span></div></li>
+  <li><div class="color_eventful_purple"><span class="color_hex">#5D82FF</span><span class="color_name">Eventful Purple </span></div></li>
+  <li><div class="color_eyespot_blue"><span class="color_hex">#00BADA</span><span class="color_name">EyeSpot Blue </span></div></li>
+  <li><div class="color_facebook_blue"><span class="color_hex">#3B5999</span><span class="color_name">FaceBook Blue </span></div></li>
+  <li><div class="color_feedburner_blue"><span class="color_hex">#0170CA</span><span class="color_name">FeedBurner Blue </span></div></li>
+  <li><div class="color_feedburner_red"><span class="color_hex">#EB003A</span><span class="color_name">Feedburner Red </span></div></li>
+  <li><div class="color_feedster_green"><span class="color_hex">#98CC00</span><span class="color_name">Feedster Green </span></div></li>
+  <li><div class="color_firefox_maroon"><span class="color_hex">#BD1D01</span><span class="color_name">Firefox Maroon </span></div></li>
+  <li><div class="color_flickr_light_blue"><span class="color_hex">#0061DE</span><span class="color_name">Flickr Light Blue </span></div></li>
+  <li><div class="color_flickr_pink"><span class="color_hex">#FF0084</span><span class="color_name">Flickr Pink </span></div></li>
+  <li><div class="color_flock_black"><span class="color_hex">#0F0F0F</span><span class="color_name">Flock Black </span></div></li>
+  <li><div class="color_flock_blue"><span class="color_hex">#4096EE</span><span class="color_name">Flock Blue </span></div></li>
+  <li><div class="color_frappr_red"><span class="color_hex">#A71A10</span><span class="color_name">Frappr Red </span></div></li>
+  <li><div class="color_furl_blue"><span class="color_hex">#025AA2</span><span class="color_name">Furl Blue </span></div></li>
+  <li><div class="color_furl_red"><span class="color_hex">#E84C1F</span><span class="color_name">Furl Red </span></div></li>
+  <li><div class="color_gimme20_hot_pink"><span class="color_hex">#FD65C2</span><span class="color_name">Gimme20 Hot Pink </span></div></li>
+  <li><div class="color_gmail_alice_blue"><span class="color_hex">#EFEFFF</span><span class="color_name">Gmail Alice Blue </span></div></li>
+  <li><div class="color_gmail_blue"><span class="color_hex">#C3D9FF</span><span class="color_name">Gmail Blue </span></div></li>
+  <li><div class="color_gnoos_red"><span class="color_hex">#D50000</span><span class="color_name">Gnoos Red </span></div></li>
+  <li><div class="color_google_white"><span class="color_hex">#FFFFFF</span><span class="color_name">Google White </span></div></li>
+  <li><div class="color_hi5_orange"><span class="color_hex">#EF9A19</span><span class="color_name">Hi5 Orange </span></div></li>
+  <li><div class="color_interactive_action_yellow"><span class="color_hex">#FFFF88</span><span class="color_name">Interactive Action Yellow </span></div></li>
+  <li><div class="color_jaiku_green"><span class="color_hex">#96C63F</span><span class="color_name">Jaiku Green </span></div></li>
+  <li><div class="color_judys_book_blue"><span class="color_hex">#69DBFF</span><span class="color_name">Judys Book Blue </span></div></li>
+  <li><div class="color_karmadu_gold"><span class="color_hex">#FFC300</span><span class="color_name">Karmadu Gold </span></div></li>
+  <li><div class="color_kiko_light_steel_blue"><span class="color_hex">#9CB6DE</span><span class="color_name">Kiko Light Steel Blue </span></div></li>
+  <li><div class="color_last_fm_crimson"><span class="color_hex">#D61C39</span><span class="color_name">Last.fm Crimson</span></div></li>
+  <li><div class="color_last_fm_red"><span class="color_hex">#D10039</span><span class="color_name">Last.fm Red</span></div></li>
+  <li><div class="color_lifelog_pink"><span class="color_hex">#FE198E</span><span class="color_name">Lifelog Pink </span></div></li>
+  <li><div class="color_lijit_green"><span class="color_hex">#BEDB8A</span><span class="color_name">Lijit Green </span></div></li>
+  <li><div class="color_linkedin_blue"><span class="color_hex">#1A7FB3</span><span class="color_name">LinkedIn Blue </span></div></li>
+  <li><div class="color_listable_coral"><span class="color_hex">#FF7B38</span><span class="color_name">Listable Coral </span></div></li>
+  <li><div class="color_listable_orange"><span class="color_hex">#FF7638</span><span class="color_name">Listable Orange </span></div></li>
+  <li><div class="color_live_journal_blue"><span class="color_hex">#3D5381</span><span class="color_name">Live Journal Blue </span></div></li>
+  <li><div class="color_ma_gnolia_creme"><span class="color_hex">#F3F3CC</span><span class="color_name">Ma.gnolia Creme</span></div></li>
+  <li><div class="color_ma_gnolia_yellow"><span class="color_hex">#FEBF0F</span><span class="color_name">Ma.gnolia Yellow</span></div></li>
+  <li><div class="color_magnolia_mag_nolia"><span class="color_hex">#F9F7ED</span><span class="color_name">Magnolia Mag.nolia</span></div></li>
+  <li><div class="color_mashable_pink"><span class="color_hex">#F28FBF</span><span class="color_name">Mashable Pink </span></div></li>
+  <li><div class="color_meebo_orange"><span class="color_hex">#FF910D</span><span class="color_name">Meebo Orange </span></div></li>
+  <li><div class="color_meetup_red"><span class="color_hex">#E51837</span><span class="color_name">MeetUp Red </span></div></li>
+  <li><div class="color_microsoft_blue"><span class="color_hex">#87C1E7</span><span class="color_name">Microsoft Blue </span></div></li>
+  <li><div class="color_minti_green"><span class="color_hex">#009F59</span><span class="color_name">Minti Green </span></div></li>
+  <li><div class="color_minutesinaminute_teal"><span class="color_hex">#00457B</span><span class="color_name">MinutesInAMinute Teal </span></div></li>
+  <li><div class="color_minutesinaminute_blue"><span class="color_hex">#2971AD</span><span class="color_name">MinutesInAMinute Blue </span></div></li>
+  <li><div class="color_moodmill_pastel"><span class="color_hex">#FA9B65</span><span class="color_name">Moodmill Pastel </span></div></li>
+  <li><div class="color_mozilla_blue"><span class="color_hex">#3F4C6B</span><span class="color_name">Mozilla Blue </span></div></li>
+  <li><div class="color_mozilla_red"><span class="color_hex">#FF1A00</span><span class="color_name">Mozilla Red </span></div></li>
+  <li><div class="color_myspace_blue"><span class="color_hex">#003399</span><span class="color_name">MySpace Blue </span></div></li>
+  <li><div class="color_netscape_aqua"><span class="color_hex">#478898</span><span class="color_name">Netscape Aqua </span></div></li>
+  <li><div class="color_netvibes_green"><span class="color_hex">#62B857</span><span class="color_name">NetVibes Green </span></div></li>
+  <li><div class="color_newsvine_green"><span class="color_hex">#006E2E</span><span class="color_name">NewsVine Green </span></div></li>
+  <li><div class="color_newsvine_green_2"><span class="color_hex">#00722D</span><span class="color_name">NewsVine Green 2 </span></div></li>
+  <li><div class="color_ning_green"><span class="color_hex">#339900</span><span class="color_name">Ning Green </span></div></li>
+  <li><div class="color_odeo_pink"><span class="color_hex">#EC449B</span><span class="color_name">Odeo Pink </span></div></li>
+  <li><div class="color_onmylist_brown"><span class="color_hex">#5A471C</span><span class="color_name">OnMyList Brown </span></div></li>
+  <li><div class="color_oodle_black"><span class="color_hex">#030303</span><span class="color_name">Oodle Black </span></div></li>
+  <li><div class="color_openid_orange"><span class="color_hex">#FF6200</span><span class="color_name">OpenID Orange </span></div></li>
+  <li><div class="color_pageflakes_grey"><span class="color_hex">#D9DDE9</span><span class="color_name">Pageflakes Grey </span></div></li>
+  <li><div class="color_pandora_antique_white"><span class="color_hex">#EFEBCE</span><span class="color_name">Pandora Antique White </span></div></li>
+  <li><div class="color_pandora_blue"><span class="color_hex">#295E92</span><span class="color_name">Pandora Blue </span></div></li>
+  <li><div class="color_pingomatic_lime_green"><span class="color_hex">#28CF21</span><span class="color_name">PingOMatic Lime Green </span></div></li>
+  <li><div class="color_pownce_black"><span class="color_hex">#383121</span><span class="color_name">Pownce Black </span></div></li>
+  <li><div class="color_qoop_mint"><span class="color_hex">#CDEB8B</span><span class="color_name">Qoop Mint </span></div></li>
+  <li><div class="color_reddit_red"><span class="color_hex">#FF4600</span><span class="color_name">Reddit Red </span></div></li>
+  <li><div class="color_riya_green"><span class="color_hex">#6DC646</span><span class="color_name">Riya Green </span></div></li>
+  <li><div class="color_rollyo_red"><span class="color_hex">#CC0000</span><span class="color_name">Rollyo Red </span></div></li>
+  <li><div class="color_rss_orange"><span class="color_hex">#FF7400</span><span class="color_name">RSS Orange </span></div></li>
+  <li><div class="color_ruby_on_rails_red"><span class="color_hex">#B02B2C</span><span class="color_name">Ruby on Rails Red </span></div></li>
+  <li><div class="color_ryze_red"><span class="color_hex">#E51905</span><span class="color_name">Ryze Red </span></div></li>
+  <li><div class="color_say_so_red"><span class="color_hex">#C00000</span><span class="color_name">Say so Red </span></div></li>
+  <li><div class="color_scouta_orange"><span class="color_hex">#F78325</span><span class="color_name">Scouta Orange </span></div></li>
+  <li><div class="color_seomoz_maroon"><span class="color_hex">#924357</span><span class="color_name">SEOmoz Maroon </span></div></li>
+  <li><div class="color_shadows_grey"><span class="color_hex">#36393D</span><span class="color_name">Shadows Grey </span></div></li>
+  <li><div class="color_shiny_silver"><span class="color_hex">#EEEEEE</span><span class="color_name">Shiny Silver </span></div></li>
+  <li><div class="color_shopify_green"><span class="color_hex">#87BE2F</span><span class="color_name">Shopify Green </span></div></li>
+  <li><div class="color_skype_blue"><span class="color_hex">#6CD0F6</span><span class="color_name">Skype Blue </span></div></li>
+  <li><div class="color_slashdot_green"><span class="color_hex">#03646A</span><span class="color_name">Slashdot Green </span></div></li>
+  <li><div class="color_slide_share_aqua"><span class="color_hex">#00A8AA</span><span class="color_name">Slide Share Aqua </span></div></li>
+  <li><div class="color_smug_mug_green"><span class="color_hex">#89C122</span><span class="color_name">Smug Mug Green </span></div></li>
+  <li><div class="color_spoke_green"><span class="color_hex">#9AC80D</span><span class="color_name">Spoke Green </span></div></li>
+  <li><div class="color_spotplex_blue"><span class="color_hex">#6B9CC9</span><span class="color_name">SpotPlex Blue </span></div></li>
+  <li><div class="color_spurl_blue"><span class="color_hex">#6699CC</span><span class="color_name">Spurl Blue </span></div></li>
+  <li><div class="color_spurl_grey"><span class="color_hex">#505050</span><span class="color_name">Spurl Grey </span></div></li>
+  <li><div class="color_squidoo_blue"><span class="color_hex">#21628C</span><span class="color_name">Squidoo Blue </span></div></li>
+  <li><div class="color_squidoo_mustard"><span class="color_hex">#E5791E</span><span class="color_name">Squidoo Mustard </span></div></li>
+  <li><div class="color_stumbleupon_blue"><span class="color_hex">#057DB9</span><span class="color_name">StumbleUpon Blue </span></div></li>
+  <li><div class="color_stumbleupon_green"><span class="color_hex">#2ACC54</span><span class="color_name">StumbleUpon Green </span></div></li>
+  <li><div class="color_swicki_black"><span class="color_hex">#000000</span><span class="color_name">Swicki Black </span></div></li>
+  <li><div class="color_tagworld_green"><span class="color_hex">#5EBE8F</span><span class="color_name">Tagworld Green </span></div></li>
+  <li><div class="color_tailrank_red"><span class="color_hex">#780000</span><span class="color_name">TailRank Red </span></div></li>
+  <li><div class="color_techcrunch_green"><span class="color_hex">#008C00</span><span class="color_name">TechCrunch Green </span></div></li>
+  <li><div class="color_technorati_lime_green"><span class="color_hex">#4ABA00</span><span class="color_name">Technorati Lime Green </span></div></li>
+  <li><div class="color_the_broth_grey"><span class="color_hex">#7F7F7F</span><span class="color_name">The Broth Grey </span></div></li>
+  <li><div class="color_thembid_red"><span class="color_hex">#EA0101</span><span class="color_name">ThemBid Red </span></div></li>
+  <li><div class="color_threadless_blue"><span class="color_hex">#003368</span><span class="color_name">Threadless Blue </span></div></li>
+  <li><div class="color_twitter_blue"><span class="color_hex">#AFEAEE</span><span class="color_name">Twitter Blue </span></div></li>
+  <li><div class="color_upcoming_yellow"><span class="color_hex">#FCBD00</span><span class="color_name">Upcoming Yellow </span></div></li>
+  <li><div class="color_vimeo_grey"><span class="color_hex">#E7E7DE</span><span class="color_name">Vimeo Grey </span></div></li>
+  <li><div class="color_voo2do_com_lemon_chiffon"><span class="color_hex">#FFFFBD</span><span class="color_name">Voo2Do.com Lemon Chiffon</span></div></li>
+  <li><div class="color_vox_red"><span class="color_hex">#D71920</span><span class="color_name">Vox Red </span></div></li>
+  <li><div class="color_wayfaring_green"><span class="color_hex">#128F34</span><span class="color_name">Wayfaring Green </span></div></li>
+  <li><div class="color_wikipedia_black"><span class="color_hex">#0F0E13</span><span class="color_name">WikiPedia Black </span></div></li>
+  <li><div class="color_wikipedia_lavender"><span class="color_hex">#DEEBFF</span><span class="color_name">Wikipedia Lavender </span></div></li>
+  <li><div class="color_wordpress_blue"><span class="color_hex">#174C89</span><span class="color_name">WordPress Blue </span></div></li>
+  <li><div class="color_writeboard_green"><span class="color_hex">#64BB69</span><span class="color_name">WriteBoard Green </span></div></li>
+  <li><div class="color_writely_olive"><span class="color_hex">#73880A</span><span class="color_name">Writely Olive </span></div></li>
+  <li><div class="color_writely_sandy_brown"><span class="color_hex">#F3AE48</span><span class="color_name">Writely Sandy Brown </span></div></li>
+  <li><div class="color_xanga_green"><span class="color_hex">#4DB848</span><span class="color_name">Xanga Green </span></div></li>
+  <li><div class="color_yahoo_red"><span class="color_hex">#FC0234</span><span class="color_name">Yahoo Red </span></div></li>
+  <li><div class="color_youtube_tomato"><span class="color_hex">#FF6666</span><span class="color_name">YouTube Tomato </span></div></li>
+  <li><div class="color_ziki_blue"><span class="color_hex">#03A0FA</span><span class="color_name">Ziki Blue </span></div></li>
+</ul>
