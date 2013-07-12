@@ -2006,6 +2006,12 @@ img[src*=typekit] {
   display: none !important;
 }
 
+/* line 51, ../sass/_formatting.scss */
+.caption {
+  font-size: 0.825em;
+  color: gray;
+}
+
 /* line 1, ../sass/_ui.scss */
 .overview, .post.detail .content h1, .post.detail .content h2, .post.detail .content h3, .post.detail .content h4, .post.detail .content h5, .post.detail .content h6, .post.detail .content p {
   width: 550px;

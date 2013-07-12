@@ -83,7 +83,8 @@ Superslides has come a long way in a year. So what's changed?
     </nav>
   </div>
 </div>
-(Chicago, early 1900s)
+
+<p class="caption">(Chicago, early 1900s)</p>
 
 #### Fade animation
 

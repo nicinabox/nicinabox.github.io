@@ -47,3 +47,8 @@ img {
     @extend p.lead;
   }
 }
+
+.caption {
+  font-size: ms(0) - 0.3em;
+  color: gray;
+}
