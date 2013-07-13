@@ -2391,13 +2391,20 @@ img[src*=typekit] {
   /* line 43, ../sass/_projects.scss */
   .project.intro nav a {
     padding: 6px 12px;
-    width: 48%;
+    width: 49%;
     background: #eee;
     text-align: center;
     border-radius: 3px;
+    display: block;
+    float: left;
   }
-  /* line 49, ../sass/_projects.scss */
+  /* line 51, ../sass/_projects.scss */
   .project.intro nav a + a {
     margin-left: 2%;
+  }
+  /* line 56, ../sass/_projects.scss */
+  .project.intro .label {
+    margin: -1em 0 1em;
+    font-size: 0.7em;
   }
 }
