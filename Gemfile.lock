@@ -52,5 +52,5 @@ PLATFORMS
 DEPENDENCIES
   compass
   compass-normalize
-  jekyll
+  jekyll (~> 1.0.3)
   modular-scale
