@@ -4,6 +4,7 @@ pygments: true
 permalink: /blog/:title/
 excerpt_separator: "<!-- more -->"
 url: http://nicinabox.com
+markdown: redcarpet
 
 disqus_short_name: nicinabox
 disqus_show_comment_count: false
